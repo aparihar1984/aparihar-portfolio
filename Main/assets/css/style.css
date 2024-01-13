@@ -9,17 +9,18 @@ body {
   position: relative;
   font-family: "Goudy Bookletter 1911", sans-serif;
   font-size: 20px;
-  background-color: #FDF8F5;
-  color: #4F4846;
+  /* background-color: #FDF8F5; */
+  color: #FDF8F5;
 }
 
-h1,
-h2 {
+h1 {
   margin: 20px;
+  text-align: center;
 }
 
 main {
   padding: 60px 0;
+  background-color: rgb(81, 123, 181)
 }
 
 li {
@@ -33,24 +34,32 @@ a {
   color: #FDF8F5;
 }
 
-header,
+header {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: blue;
+}
+
+header {
+  position: absolute;
+  margin-bottom: 0;
+  top: 0;
+  border-bottom: 10px solid lightblue;
+}
+
 footer {
   height: 60px;
   width: 100%;
   line-height: 60px;
-  background-color: #266150;
-}
-
-header {
-  position: fixed;
-  border-bottom: 10px solid #DDAF94;
+  background-color: blue;
 }
 
 footer {
   position: absolute;
   margin-top: 0;
   bottom: 0;
-  border-bottom: 10px solid #4F4846;
+  border-bottom: 10px solid lightblue;
   color: #FDF8F5;    
 }
 
@@ -63,28 +72,29 @@ img {
   margin: 20px auto;
 }
 
-section {
+/* From Original Activity 22 */
+/* section {
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
   border-top: 3px solid #DDAF94;
   background-color:  #E8CEBF;
-}
+} */
 
-form {
+/* form { */
   /* Center the form on the page */
-  margin: 0 auto;
+  /* margin: 0 auto;
   width: 500px;
   padding: 10px;
   border: 5px solid #DDAF94;
   border-radius: 20px;
-}
+}  */
 
-label {
+/* label {
   display: inline-block;
   width: 100px;
-}
+} */
   
-input, 
+/* input, 
 textarea {
   box-sizing: border-box;
   width: 300px;
@@ -101,13 +111,54 @@ button {
   width: 120px;
   background-color: #4F4846;
   color: #FDF8F5;
-}
+} */
  
 /* Class Selectors */
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-right {
   text-align: right;
+}
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    background: red;
+  }
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 576px) {
+  nav {
+    background: crimson;
+  }
+}
+
+/* Tablets - footer changes color */
+@media screen and (max-width: 992px) {
+  footer {
+    background: orange;
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  main {
+    background-color: limegreen;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  figure {
+    background-color: yellow;
+  }
 }
