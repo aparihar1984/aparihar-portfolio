@@ -15,14 +15,15 @@ body {
   margin: 0;
 }
 
-.header {
+header {
   /* height: 60px; */
-  padding: 0px;
+  padding: 10px;
   /* width: 100%; */
-  /* text-align: right; */
+  text-align: center;
   /* line-height: 60px; */
   background-color: blue;
   border-bottom: 10px solid lightblue;
+  color: #FDF8F5;
 }
 
 /* header {
@@ -32,63 +33,75 @@ body {
   border-bottom: 10px solid lightblue;
 } */
 
-.header h1 {
+/* .header h1 {
   margin: 20px;
   color: #FDF8F5;
-  /* display: inline-block; */
-  /* text-align: left; */
+  display: inline-block;
+  text-align: left;
+} */
+
+nav {
+  display: flex;
+  background-color: blue;
+  border-bottom: 10px solid lightblue;
 }
 
-.header li {
+/* .header li {
   display: inline;
   padding: 0px 20px;
   text-decoration: none;
-}
+} */
 
-.header a {
+nav a {
+  padding: 10px 50px;
   text-decoration: none;
   color: #FDF8F5;
+  text-align: left;
 }
 
 main {
   /* padding: 60px 0; */
   display: flex;
+  flex-wrap: wrap;
   background-color: rgb(81, 123, 181);
   color: #FDF8F5;
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 aside {
   flex: 30%;
-  background-color: rgb(81, 123, 181);
+  /* background-color: rgb(81, 123, 181); */
   padding: 0px;
   flex-wrap: wrap;
 }
 
 section {
   flex: 70%;
-  background-color: rgb(81, 123, 181);
+  /* background-color: rgb(81, 123, 181); */
   padding: 20px;
 }
 
 footer {
   /* height: 60px; */
-  padding: 0px;
-  width: 100%;
-  line-height: 60px;
+  padding: 5px;
+  text-align: center;
+  /* width: 100%; */
+  /* line-height: 60px; */
   background-color: blue;
+  color: #FDF8F5;
+  border-bottom: 10px solid lightblue;
 }
 
-footer {
+/* footer {
   position: absolute;
   margin-top: 0;
   bottom: 0;
   border-bottom: 10px solid lightblue;
   color: #FDF8F5;    
-}
+} */
 
 figure {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 img {
@@ -138,7 +151,7 @@ button {
 } */
  
 /* Class Selectors */
-.text-left {
+/* .text-left {
   text-align: left;
 }
 
@@ -148,13 +161,13 @@ button {
 
 .text-right {
   text-align: right;
-}
+} */
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-  .header {
+  header {
     background: red;
   }
 }
