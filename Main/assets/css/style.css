@@ -69,17 +69,63 @@ main {
 }
 
 aside {
-  flex: 30%;
+  flex: 20%;
   /* background-color: rgb(81, 123, 181); */
   padding: 0px;
   flex-wrap: wrap;
 }
 
 section {
-  flex: 70%;
+  flex: 80%;
   /* background-color: rgb(81, 123, 181); */
   padding: 20px;
 }
+
+.products {
+  /* flex: 1; */
+  background-color: rgb(81, 123, 181);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 2 1 400px;
+}
+
+.card h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* .card ul {
+  padding: 20px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.card li {
+  font-family: "Goudy Bookletter 1911", sans-serif;
+} */
+
+.card a {
+  color: #FDF8F5;
+  text-decoration: none;
+}
+
 
 footer {
   /* height: 60px; */
@@ -100,14 +146,23 @@ footer {
   color: #FDF8F5;    
 } */
 
-figure {
+/* figure {
   margin-bottom: 30px;
-}
+} */
 
 img {
   display: block;
-  margin: 20px auto;
+  margin: 50px auto;
 }
+
+/* sample-img {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("..assets/images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
+} */
 
 /* From Original Activity 22 */
 /* section {
@@ -189,7 +244,7 @@ button {
 /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
   aside {
-    background-color: limegreen;
+    background-color: turquoise;
   }
 }
 
