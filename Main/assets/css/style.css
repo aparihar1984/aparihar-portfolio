@@ -1,57 +1,31 @@
 /* Universal Selector */
 * {
   box-sizing: border-box;
-  /* margin:0;
-  padding:0;   */
 }
 
 /* Element Selectors */
 body {
-  /* position: relative; */
   font-family: "Goudy Bookletter 1911", sans-serif;
-  /* font-size: 20px; */
-  /* background-color: #FDF8F5; */
-  /* color: #FDF8F5; */
   margin: 0;
 }
 
+/* Header Properties */
 header {
-  /* height: 60px; */
   padding: 10px;
-  /* width: 100%; */
   text-align: center;
-  /* line-height: 60px; */
   background-color: blue;
   border-bottom: 10px solid lightblue;
   color: #FDF8F5;
 }
 
-/* header {
-  position: absolute;
-  margin-bottom: 0;
-  top: 0;
-  border-bottom: 10px solid lightblue;
-} */
-
-/* .header h1 {
-  margin: 20px;
-  color: #FDF8F5;
-  display: inline-block;
-  text-align: left;
-} */
-
+/* "Linkbar" Background Properties */
 nav {
   display: flex;
   background-color: blue;
   border-bottom: 10px solid lightblue;
 }
 
-/* .header li {
-  display: inline;
-  padding: 0px 20px;
-  text-decoration: none;
-} */
-
+/* "Linkbar" Links Properties */
 nav a {
   padding: 10px 50px;
   text-decoration: none;
@@ -59,37 +33,43 @@ nav a {
   text-align: left;
 }
 
+/* Main Body Background Properties */
 main {
-  /* padding: 60px 0; */
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(81, 123, 181);
   color: #FDF8F5;
-  /* bottom: 0; */
 }
 
+/* Personal Photo/Avatar Background Properties */
 aside {
   flex: 20%;
-  /* background-color: rgb(81, 123, 181); */
   padding: 0px;
   flex-wrap: wrap;
 }
 
+/* Personal Photo/Avatar Picture Properties */
+img {
+  display: block;
+  margin: 50px auto;
+}
+
+/* About Me Paragraph Background Settings*/
 section {
   flex: 80%;
-  /* background-color: rgb(81, 123, 181); */
   padding: 20px;
 }
 
+/* Projects and Placeholders General Properties */
 .products {
-  /* flex: 1; */
+  flex: 1;
   background-color: rgb(81, 123, 181);
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 
+/* Projects and Placeholders Border Properties */
 .card {
   border-style: solid;
   border-width: 1px;
@@ -98,166 +78,73 @@ section {
   flex: 2 1 400px;
 }
 
+/* Projects and Placeholders Header Properties */
 .card h2 {
   padding: 20px;
   text-align: center;
 }
 
+/* Projects and Placeholders Paragraph Properties */
 .card p {
   text-align: center;
 }
 
+/* Projects and Placeholders Image Properties */
 .card img {
   width: 100%;
 }
 
-/* .card ul {
-  padding: 20px;
-  text-align: center;
-  list-style-type: none;
-}
-
-.card li {
-  font-family: "Goudy Bookletter 1911", sans-serif;
-} */
-
+/* Projects and Placeholders Link Properties */
 .card a {
   color: #FDF8F5;
   text-decoration: none;
 }
 
-
+/* Footer Properties */
 footer {
-  /* height: 60px; */
   padding: 5px;
   text-align: center;
-  /* width: 100%; */
-  /* line-height: 60px; */
   background-color: blue;
   color: #FDF8F5;
   border-bottom: 10px solid lightblue;
 }
 
-/* footer {
-  position: absolute;
-  margin-top: 0;
-  bottom: 0;
-  border-bottom: 10px solid lightblue;
-  color: #FDF8F5;    
-} */
-
-/* figure {
-  margin-bottom: 30px;
-} */
-
-img {
-  display: block;
-  margin: 50px auto;
-}
-
-/* sample-img {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("..assets/images/digital-marketing-meeting.jpg");
-  background-size: cover;
-  background-position: center;
-} */
-
-/* From Original Activity 22 */
-/* section {
-  margin-bottom: 0;
-  padding: 20px 10px 40px 10px;
-  border-top: 3px solid #DDAF94;
-  background-color:  #E8CEBF;
-} */
-
-/* form { */
-  /* Center the form on the page */
-  /* margin: 0 auto;
-  width: 500px;
-  padding: 10px;
-  border: 5px solid #DDAF94;
-  border-radius: 20px;
-}  */
-
-/* label {
-  display: inline-block;
-  width: 100px;
-} */
-  
-/* input, 
-textarea {
-  box-sizing: border-box;
-  width: 300px;
-  border: 1px solid #4F4846;
-}
-
-textarea {
-  vertical-align: top;
-  height: 60px;
-}
-  
-button {
-  height: 40px;
-  width: 120px;
-  background-color: #4F4846;
-  color: #FDF8F5;
-} */
- 
-/* Class Selectors */
-/* .text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-} */
-
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
   header {
     background: red;
-  }
-}
-
-/* Tablets - header changes color */
-@media screen and (max-width: 576px) {
-  nav {
-    background: crimson;
+    flex-direction: column;
   }
 }
 
 /* Tablets - footer changes color */
 @media screen and (max-width: 992px) {
   footer {
-    background: orange;
-  }
-}
-
-/* Large smartphones - navbar changes color */
-@media screen and (max-width: 768px) {
-  aside {
-    background-color: turquoise;
-  }
-}
-
-/* Large smartphones - navbar changes color */
-@media screen and (max-width: 768px) {
-  section {
-    background-color: limegreen;
+    background: yellowgreen;
+    flex-direction: column;
   }
 }
 
 /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
-  figure {
-    background-color: yellow;
+  aside {
+    background-color: turquoise;
+    flex-direction: column;
+  }
+}
+
+/* Small smartphones - links change color */
+@media screen and (max-width: 576px) {
+  nav {
+    background: crimson;
+    flex-direction: column;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  section {
+    background-color: limegreen;
+    flex-direction: column;
   }
 }
